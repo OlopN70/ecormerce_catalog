@@ -21,7 +21,7 @@
             </div>
         </div>
         <div v-else class="container"
-            :class="!isProductAvailable ? 'bg-gray' : product.data.category === 'men\'s clothing' ? 'bg-blue' : 'bg-pink'">
+            :class="!isProductAvailable ? 'bg-gray' : product.data.category === 'men\'s clothing' ? 'bg-light-blue' : 'bg-pink'">
             <div class="overlay">
                 <img src="../assets/bg-shape.svg" alt="background overlay">
             </div>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="details">
                         <div class="top">
-                            <h3 :class="product.data.category === 'men\'s clothing' ? 'font-navy' : 'font-magenta'"
+                            <h3 :class="product.data.category === 'men\'s clothing' ? 'font-slate-blue' : 'font-dark-violet'"
                                 class="title">{{ product.data.title }}</h3>
                             <div class="sub-title">
                                 <span>{{ product.data.category }}</span>
@@ -51,19 +51,19 @@
                                     <span>{{ product.data.rating.rate }}/5</span>
                                     <div class="rating">
                                         <span
-                                            :class="product.data.category === 'men\'s clothing' ? 'bg-navy' : 'bg-magenta'"
+                                            :class="product.data.category === 'men\'s clothing' ? 'bg-slate-blue' : 'bg-dark-violet'"
                                             class="circle"></span>
                                         <span
-                                            :class="product.data.category === 'men\'s clothing' ? 'bg-navy' : 'bg-magenta'"
+                                            :class="product.data.category === 'men\'s clothing' ? 'bg-slate-blue' : 'bg-dark-violet'"
                                             class="circle"></span>
                                         <span
-                                            :class="product.data.category === 'men\'s clothing' ? 'bg-navy' : 'bg-magenta'"
+                                            :class="product.data.category === 'men\'s clothing' ? 'bg-slate-blue' : 'bg-dark-violet'"
                                             class="circle"></span>
                                         <span
-                                            :class="product.data.category === 'men\'s clothing' ? 'bg-navy' : 'bg-magenta'"
+                                            :class="product.data.category === 'men\'s clothing' ? 'bg-slate-blue' : 'bg-dark-violet'"
                                             class="circle"></span>
                                         <span
-                                            :class="product.data.category === 'men\'s clothing' ? 'bg-navy' : 'bg-magenta'"
+                                            :class="product.data.category === 'men\'s clothing' ? 'bg-slate-blue' : 'bg-dark-violet'"
                                             class="circle"></span>
                                     </div>
                                 </div>
@@ -73,14 +73,15 @@
                             </div>
                         </div>
                         <div class="bottom">
-                            <span :class="product.data.category === 'men\'s clothing' ? 'font-navy' : 'font-magenta'"
+                            <span
+                                :class="product.data.category === 'men\'s clothing' ? 'font-slate-blue' : 'font-dark-violet'"
                                 class="price">${{ product.data.price }}</span>
                             <div class="action">
                                 <button type="button"
-                                    :class="product.data.category === 'men\'s clothing' ? 'bg-navy' : 'bg-magenta'"
+                                    :class="product.data.category === 'men\'s clothing' ? 'bg-slate-blue' : 'bg-dark-violet'"
                                     class="action-buy">Buy Now</button>
                                 <button type="button" @click="getSingleProduct()"
-                                    :class="product.data.category === 'men\'s clothing' ? 'border-navy font-navy' : 'border-magenta font-magenta'"
+                                    :class="product.data.category === 'men\'s clothing' ? 'border-slate-blue font-slate-blue' : 'border-dark-violet font-dark-violet'"
                                     class="action-next">Next Product</button>
                             </div>
                         </div>
@@ -134,4 +135,6 @@ export default {
 }
 </script>
 
-<style scoped>@import '../assets/style/page.css'</style>
+<style scoped>
+@import '../assets/style/page.css'
+</style>

@@ -5,11 +5,11 @@
     font-family: 'Inter', sans-serif;
 }
 :root {
-    --navy: #0d2146;
+    --slate-blue: #0d2146;
     --pink: #dec2e0;
     --black: #1E1E1E;
-    --magenta: #720060;
-    --blue: #D6E6FF;
+    --dark-violet: #720060;
+    --light-blue: #D6E6FF;
     --dark-gray: #3F3F3F;
     --gray: #DCDCDC;
     --white: #FFFFFF
@@ -240,8 +240,8 @@
 .action > .action-next {
     background-color: var(--white);
 }
-.bg-blue {
-    background: linear-gradient(180deg, var(--blue) 65%, var(--white) 50%);
+.bg-light-blue {
+    background: linear-gradient(180deg, var(--light-blue) 65%, var(--white) 50%);
 }
 .bg-pink {
     background: linear-gradient(180deg, var(--pink) 65%, var(--white) 50%);
@@ -252,23 +252,23 @@
 .bg-white {
     background-color: var(--white);
 }
-.bg-navy {
-    background-color: var(--navy);
+.bg-slate-blue {
+    background-color: var(--slate-blue);
 }
-.bg-magenta {
-    background-color: var(--magenta);
+.bg-dark-violet {
+    background-color: var(--dark-violet);
 }
-.border-navy {
-    border: 2px solid var(--navy);
+.border-slate-blue {
+    border: 2px solid var(--slate-blue);
 }
-.border-magenta {
-    border: 2px solid var(--magenta);
+.border-dark-violet {
+    border: 2px solid var(--dark-violet);
 }
-.font-navy {
-    color: var(--navy);
+.font-slate-blue {
+    color: var(--slate-blue);
 }
-.font-magenta {
-    color: var(--magenta);
+.font-dark-violet {
+    color: var(--dark-violet);
 }
 
 @keyframes pulse {
